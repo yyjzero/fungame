@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunGame - Classic Tetris Online Game | Play Free</title>
-    <meta name="description" content="Play classic Tetris online for free. Experience the timeless puzzle game with modern controls and smooth gameplay on any device.">
-    <link rel="canonical" href="https://hifungame.cc/tetris" />
+    <title>Pete and the Beanstalk - Cute Penguin Adventure Game | Play Free</title>
+    <meta name="description" content="Help Pete the Penguin climb the magical beanstalk! Collect flowers, test your reflexes, and reach new heights in this charming adventure game.">
+    <link rel="canonical" href="https://hifungame.cc/pete-beanstalk" />
     
     <style>
         :root {
@@ -112,14 +112,51 @@
                 height: 500px;
             }
         }
+
+        /* 添加排行榜样式 */
+        .leaderboard {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .leaderboard-table th,
+        .leaderboard-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .leaderboard-table th {
+            background-color: var(--apple-background);
+            font-weight: 600;
+        }
+
+        .rank {
+            width: 60px;
+            text-align: center;
+        }
+
+        .score {
+            width: 100px;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Classic Tetris - Free Online Game</h1>
+        <h1>Pete and the Beanstalk</h1>
         
         <p class="game-intro">
-            Experience the timeless puzzle game that has captivated millions worldwide
+            Join Pete the Penguin on his magical adventure climbing the beanstalk and collecting beautiful flowers!
         </p>
 
         <div class="game-container">
@@ -132,29 +169,57 @@
         <div class="game-details">
             <h2>Game Features</h2>
             <ul class="feature-list">
-                <li>Classic Tetris gameplay with modern controls</li>
-                <li>Responsive design for both desktop and mobile devices</li>
-                <li>Smooth animations and intuitive interface</li>
-                <li>Progressive difficulty levels</li>
-                <li>Score tracking and high score system</li>
+                <li>Guide Pete the Penguin up the magical beanstalk</li>
+                <li>Test your reflexes with quick teleportation mechanics</li>
+                <li>Collect beautiful flowers along your journey</li>
+                <li>Simple yet challenging gameplay</li>
+                <li>Compete for the highest score</li>
             </ul>
 
             <h2>How to Play</h2>
             <ul class="feature-list">
-                <li>Use arrow keys or touch controls to move pieces</li>
-                <li>Rotate blocks to fit them perfectly</li>
-                <li>Clear lines to score points</li>
-                <li>Plan ahead with next piece preview</li>
-                <li>Try to achieve the highest score possible</li>
+                <li>Press A or Left Arrow to teleport left</li>
+                <li>Press D or Right Arrow to teleport right</li>
+                <li>Collect as many flowers as possible</li>
+                <li>Avoid falling off the beanstalk</li>
+                <li>Press ESC to quit the game</li>
             </ul>
 
             <h2>About the Game</h2>
             <p>
-                This modern implementation of the classic Tetris game brings the beloved puzzle 
-                experience to your browser. Perfect for quick gaming sessions or extended 
-                play, our version maintains the original charm while adding modern features 
-                and smooth controls.
+                Inspired by the classic tale of Jack and the Beanstalk, Pete the Penguin plants his own 
+                magical seed and embarks on an exciting vertical adventure. Your goal is to help our 
+                loveable penguin reach the pretty pink flower at the top while collecting as many flowers 
+                as possible along the way. With simple controls but challenging gameplay, this charming 
+                game will test your reflexes and timing!
             </p>
+        </div>
+
+        <div class="leaderboard">
+            <h2>Top 20 High Scores</h2>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th class="rank">Rank</th>
+                        <th>Player</th>
+                        <th class="score">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 示例数据，实际应该由后端提供 -->
+                    <tr>
+                        <td class="rank">1</td>
+                        <td>PenguinMaster</td>
+                        <td class="score">12,450</td>
+                    </tr>
+                    <tr>
+                        <td class="rank">2</td>
+                        <td>FlowerCollector</td>
+                        <td class="score">11,830</td>
+                    </tr>
+                    <!-- 可以添加更多行来显示更多玩家 -->
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
